@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube No Spoil",
+    "version": "1.0",
+  
+    "description": "Remove visible comment on youtube",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["./index.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
